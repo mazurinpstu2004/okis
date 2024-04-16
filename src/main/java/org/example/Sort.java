@@ -1,7 +1,7 @@
 package org.example;
 
 public class Sort {
-    public static void BubbleSort(int[] arr) throws NullArrayException {
+    public static void bubbleSort(int[] arr) throws NullArrayException {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }
@@ -17,7 +17,7 @@ public class Sort {
             }
         }
     }
-    public static void ShakerSort(int[] arr) throws NullArrayException {
+    public static void shakerSort(int[] arr) throws NullArrayException {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }
@@ -44,7 +44,7 @@ public class Sort {
             left++;
         }
     }
-    public static void InsertionSort(int[] arr) throws NullArrayException {
+    public static void insertionSort(int[] arr) throws NullArrayException {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }
@@ -58,7 +58,7 @@ public class Sort {
             arr[j] = swap;
         }
     }
-    public static void ShellSort(int[] arr) throws NullArrayException {
+    public static void shellSort(int[] arr) throws NullArrayException {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }

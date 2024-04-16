@@ -16,7 +16,7 @@
             </class>
             <class name = "org.example.TestStringOperations">
                 <methods>
-                    <include name ="TestTestDigitsInStringException"/>
+                    <include name ="TestDigitsInStringException"/>
                 </methods>
             </class>
         </classes>

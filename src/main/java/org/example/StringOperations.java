@@ -1,12 +1,10 @@
 package org.example;
 
-import org.checkerframework.checker.units.qual.N;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringOperations {
-    public static  String AlternatingSymbols(String str1, String str2)  {
+    public static  String alternatingSymbols(String str1, String str2)  {
         int len = str1.length();
         String str = "";
         for (int i = 0; i < len; i++) {
@@ -16,7 +14,7 @@ public class StringOperations {
         return str;
     }
 
-    public static String StringCompression(String str) {
+    public static String stringCompression(String str) {
         String res = "";
         Pattern p = Pattern.compile("(.)\\1{0,}");
         Matcher m = p.matcher(str);
@@ -30,7 +28,7 @@ public class StringOperations {
         return res;
     }
 
-    public static int DigitsInString(String str) throws NullStringException {
+    public static int digitsInString(String str) throws NullStringException {
         if (str == "") {
             throw new NullStringException("Пустая строка");
         }
@@ -45,7 +43,7 @@ public class StringOperations {
         return sch;
     }
 
-    public static int MultiplicationDigitsInString(String str) throws NullStringException {
+    public static int multiplicationDigitsInString(String str) throws NullStringException {
         if (str == "") {
             throw new NullStringException("Пустая строка");
         }

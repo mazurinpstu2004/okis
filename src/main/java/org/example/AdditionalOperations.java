@@ -1,9 +1,9 @@
 package org.example;
 
-import static org.example.Sort.BubbleSort;
+import static org.example.Sort.bubbleSort;
 
 public class AdditionalOperations {
-    public static int Factorial(int n) {
+    public static int factorial(int n) {
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             // factorial += i;
@@ -12,7 +12,7 @@ public class AdditionalOperations {
         return factorial;
     }
 
-    public static int MatrixElementsSum(int[][] matrix) throws Exception {
+    public static int matrixElementsSum(int[][] matrix) throws Exception {
         if (matrix.length == 0) {
             throw new NullMatrixException("Пустая матрица");
         }
@@ -25,11 +25,11 @@ public class AdditionalOperations {
         }
         return sum;
     }
-    public static int[] DeleteDuplicates(int[] arr) throws Exception {
+    public static int[] deleteDuplicates(int[] arr) throws Exception {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }
-        BubbleSort(arr);
+        bubbleSort(arr);
         int[] temp = new int[arr.length];
         int j = 0;
         for (int i = 0; i < arr.length - 1; i++) {
@@ -44,7 +44,7 @@ public class AdditionalOperations {
         }
         return NewArr;
     }
-    public static int ArrayMaxElement(int[] arr) throws Exception {
+    public static int arrayMaxElement(int[] arr) throws Exception {
         if (arr.length == 0) {
             throw new NullArrayException("Пустой массив");
         }
