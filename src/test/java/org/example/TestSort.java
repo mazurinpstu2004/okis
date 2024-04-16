@@ -60,10 +60,7 @@ public class TestSort {
     public static void testSortException() throws Exception {
         //arange
         final int[] ARR = {};
-        int[] expectedResult = {};
-        int[] actualResult;
         //act
         shakerSort(ARR); // Можно использовать любую сортировку
-        actualResult = ARR;
     }
 }

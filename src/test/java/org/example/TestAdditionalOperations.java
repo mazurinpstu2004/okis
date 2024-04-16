@@ -44,8 +44,6 @@ public class TestAdditionalOperations {
     @Test(groups = {"positive"}, dataProvider = "arrays")
     public static void testDeleteDuplicates(int[] arr, int[] expectedResult) throws Exception {
         //arange
-        // final int[] ARR = {};
-        // int[] expectedResult = {};
         int[] actualResult;
         //act
         actualResult = deleteDuplicates(arr);
