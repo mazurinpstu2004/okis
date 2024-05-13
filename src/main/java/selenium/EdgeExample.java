@@ -32,14 +32,14 @@ public class EdgeExample {
         xElem3 = Driver.findElement((By.xpath("//ul/li[3]/ul/li[6]/ul/li[2]")));
         xElem3.click();
 
-//        WebElement cssElem1, cssElem2;
-//        cssElem1 = Driver.findElement(By.cssSelector("a[href=\"#_download\"]"));
-//        cssElem1.click();
-//
-//        cssElem2 = Driver.findElement(By.cssSelector("a[href=\"#_snapshots\"]"));
-//        cssElem2.click();
+        WebElement cssElem1, cssElem2;
+        cssElem1 = Driver.findElement(By.cssSelector("a[href=\"#_download\"]"));
+        cssElem1.click();
+
+        cssElem2 = Driver.findElement(By.cssSelector("a[href=\"#_snapshots\"]"));
+        cssElem2.click();
 
 
-//        Driver.quit();
+        Driver.quit();
     }
 }

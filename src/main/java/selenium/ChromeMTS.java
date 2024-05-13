@@ -27,10 +27,10 @@ public class ChromeMTS {
         xElem = Driver.findElement(By.xpath("//mts-navigation-widget/section/div/div/div/a[1]"));
         xElem.click();
 
-//        WebElement cssElem;
-//        cssElem = Driver.findElement(By.cssSelector("a[href=\"/personal/dom\"]"));
-//        cssElem.click();
+        WebElement cssElem;
+        cssElem = Driver.findElement(By.cssSelector("a[href=\"/personal/dom\"]"));
+        cssElem.click();
 
-//        Driver.quit();
+        Driver.quit();
     }
 }

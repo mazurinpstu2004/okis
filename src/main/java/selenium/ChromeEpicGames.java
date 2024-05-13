@@ -28,10 +28,10 @@ public class ChromeEpicGames {
         xElem = Driver.findElement(By.xpath("//li[2]"));
         xElem.click();
 
-//        WebElement cssElem;
-//        cssElem = Driver.findElement(By.cssSelector("a[href=\"/ru/news\"]"));
-//        cssElem.click();
+        WebElement cssElem;
+        cssElem = Driver.findElement(By.cssSelector("a[href=\"/ru/news\"]"));
+        cssElem.click();
 
-//        Driver.quit();
+        Driver.quit();
     }
 }
