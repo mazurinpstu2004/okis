@@ -39,14 +39,13 @@ public class LoginPage {
             WebElement signButton = Driver.findElement(By.xpath(SIGNBUTTON));
             wait.until(ExpectedConditions.elementToBeClickable(signButton));
             signButton.click();
+
+            WebElement answerButton = Driver.findElement(By.xpath(ANSWERBUTTON));
+            wait.until(ExpectedConditions.elementToBeClickable(answerButton));
+            answerButton.click();
         } catch (Exception e) {
             throw new WrongPasswordException("Неверный пароль");
         }
-        WebDriverWait wait = new WebDriverWait(Driver, Duration.ofSeconds(10));
-        WebElement answerButton = Driver.findElement(By.xpath(ANSWERBUTTON));
-        wait.until(ExpectedConditions.elementToBeClickable(answerButton));
-        answerButton.click();
-
         return Login;
     }
     public static class WrongLoginException extends Exception {
